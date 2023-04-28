@@ -49,7 +49,7 @@ a {
   display: inline-block;
 }
 
-.btn:hover{
+.btn:hover {
   opacity: 0.8;
 }
 
@@ -268,7 +268,7 @@ a {
   cursor: pointer;
 }
 
-.hero .action .video .play:hover{
+.hero .action .video .play:hover {
   opacity: 0.8;
 }
 
@@ -323,6 +323,10 @@ a {
   margin-top: 200px;
 }
 
+.courses .row {
+  align-items: unset;
+}
+
 .courses .heading {
   font-family: "Sen", sans-serif;
   font-style: normal;
@@ -349,29 +353,20 @@ a {
 }
 
 .courses .row .action .item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 50%;
+  color: var(--active-button-color);
+  border: 1px solid var(--active-button-color);
 }
 
-.courses .row .action .item-one {
-  border: 1px solid #ffb900;
-}
-
-.courses .row .action .item-one div {
-  width: 100%;
-  height: 100%;
-  background: url("../img/Vector21.svg") no-repeat center;
-}
-
-.courses .row .action .item-two {
-  background: #ffb900;
-}
-
-.courses .row .action .item-two div {
-  width: 100%;
-  height: 100%;
-  background: url("../img/Vector22.svg") no-repeat center;
+.courses .row .action .item:hover {
+  background: var(--active-button-color);
+  color: #fff;
+  cursor: pointer;
 }
 
 /* list-courses */
